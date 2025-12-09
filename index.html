@@ -18,34 +18,29 @@
       <button id="spinBtn">Spin Now</button>
     </div>
 
-    <!-- Wheel Wrapper with Arrow -->
-    <div id="wheel-wrapper" style="position: relative; display: inline-block; margin-top: 20px;">
-      
-      <!-- Arrow -->
-      <div id="wheel-arrow"
-    style="
-      position:absolute;
-      top:-32px;
-      left:50%;
-      transform:translateX(-50%);
-      width:0;
-      height:0;
+    <!-- Wheel Wrapper with Edge Arrow -->
+<div id="wheel-wrapper" style="position: relative; display: inline-block; margin-top: 20px;">
 
-      /* 金色立体边框 */
-      border-left:22px solid transparent;
-      border-right:22px solid transparent;
-      border-bottom:32px solid #FFD700;
+  <!-- Arrow pointing to the winning segment -->
+  <div id="wheel-arrow"
+       style="
+        position: absolute;
+        top: -5px; /* 贴着转盘边缘 */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 0;
+        border-left: 18px solid transparent;
+        border-right: 18px solid transparent;
+        border-bottom: 25px solid #FFD700; /* 金色箭头 */
+       ">
+  </div>
 
-      /* 立体外框（深金色） */
-      filter: drop-shadow(0px 2px 3px rgba(0,0,0,0.5));
+  <!-- Canvas Wheel -->
+  <canvas id="wheel" width="360" height="360"
+          style="display:block;">
+  </canvas>
 
-      /* 外层深色金属边框 */
-      clip-path: polygon(
-        50% 0%, 
-        100% 100%, 
-        0% 100%
-      );
-    ">
 </div>
 
       <!-- Wheel -->
