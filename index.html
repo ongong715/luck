@@ -2,13 +2,13 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>KumulBet77 Lucky Wheel</title>
+  <title>Lucky Wheel</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="card">
-    <h1>KumulBet77 Lucky Wheel</h1>
+    <h1>Lucky Wheel</h1>
 
     <label>Customer Code</label>
     <input id="code" placeholder="Enter your code (e.g. HB1001)">
@@ -18,7 +18,27 @@
       <button id="spinBtn">Spin Now</button>
     </div>
 
-    <canvas id="wheel" width="360" height="360"></canvas>
+    <!-- Wheel Wrapper with Arrow -->
+    <div id="wheel-wrapper" style="position: relative; display: inline-block; margin-top: 20px;">
+      
+      <!-- Arrow -->
+      <div id="wheel-arrow"
+          style="
+              position:absolute;
+              top:-28px;
+              left:50%;
+              transform:translateX(-50%);
+              width:0;
+              height:0;
+              border-left:18px solid transparent;
+              border-right:18px solid transparent;
+              border-bottom:28px solid #FFD700;
+          ">
+      </div>
+
+      <!-- Wheel -->
+      <canvas id="wheel" width="360" height="360"></canvas>
+    </div>
 
     <div id="out" class="out"></div>
   </div>
