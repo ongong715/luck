@@ -1,5 +1,5 @@
 // script.js - front-end uses JSONP to call Apps Script (avoids CORS)
-const API_URL = "https://script.google.com/macros/s/AKfycby8rxRflpjmN9XZlRE-DvNS6jzja6YbV9bUsjdwRoU0nu5qcMKQxbquc6R2mvUuejo/exec"; //
+const API_URL = "https://script.google.com/macros/s/AKfycbzCqqKC4T6fRz0R4cmWZT5wSUc891av8RWnZTZXPgWlePrcdgGyfEXrGGyxB1WGP-Wa/exec"; //
 
 const codeInput = document.getElementById('code');
 const requestBtn = document.getElementById('requestBtn');
