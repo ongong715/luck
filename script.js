@@ -1,5 +1,5 @@
 // script.js - front-end uses JSONP to call Apps Script (avoids CORS)
-const API_URL = "YOUR_EXEC_URL_HERE"; // <-- 替换成你的 Apps Script exec URL
+const API_URL = "https://script.google.com/macros/s/AKfycby8rxRflpjmN9XZlRE-DvNS6jzja6YbV9bUsjdwRoU0nu5qcMKQxbquc6R2mvUuejo/exec"; //
 
 const codeInput = document.getElementById('code');
 const requestBtn = document.getElementById('requestBtn');
